@@ -1,11 +1,10 @@
 
 
 <h3 align="center">
-  Teste front-end web
+  Teste front-end Web
 </h3>
 
 ## :computer: Front-end
-<blockquote>testado no Google Chrome </blockquote>
 
 ### :information_source: Instruções Front-end
 
