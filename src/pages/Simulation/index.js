@@ -7,7 +7,7 @@ import DefaultValues from '../../utils/DefaultValues'
 import './styles.css';
 
 export default function Register() {
-  const [ ativo, setAtivo ] = useState(false);
+  const [ativo, setAtivo ] = useState(false);
   const [valor, setValor] = useState(0);
   const [valorSolicitado, setValorSolicitado] = useState()
   const [valorSolicitadoApp, setValorSolicitadoApp] = useState()
@@ -21,8 +21,14 @@ export default function Register() {
   function handleCountLoan(e) {
     e.preventDefault();
     setValor(valorSolicitado / parcela * 1.25)
+
     setValorSolicitado('')
+    setValorSolicitadoApp('')
+    setPeriodo('')
     setParcela('')
+    setPoupanca('')
+    setCdb('')
+    setSelic('')
   }
 
   function handleCountApplication(e) {
@@ -31,9 +37,14 @@ export default function Register() {
     setCdb(valorSolicitado / periodo * 0.0767)
     setSelic(valorSolicitado / periodo * 0.065)
 
+    setValorSolicitado('')
+    setValorSolicitadoApp('')
+    setParcela('')
     setPoupanca('')
+    setPeriodo('')
     setCdb('')
     setSelic('')
+  
     
   }
 
@@ -53,7 +64,7 @@ export default function Register() {
 				<button onClick={handleDisable} className="button">
 					Empréstimo
 				</button>
-        <button onClick={handleActive} className="button" onReset="on">
+        <button onClick={handleActive} className="button">
 					Aplicações
 				</button>
 			</div>
