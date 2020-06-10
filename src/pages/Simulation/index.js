@@ -10,7 +10,7 @@ export default function Register() {
   const [ativo, setAtivo ] = useState(false);
   const [valor, setValor] = useState(0);
   const [valorSolicitado, setValorSolicitado] = useState()
-  const [valorSolicitadoApp, setValorSolicitadoApp] = useState()
+  // const [valorSolicitadoApp, setValorSolicitadoApp] = useState()
   const [parcela, setParcela] = useState()
 
   const [periodo, setPeriodo] = useState()
@@ -23,7 +23,6 @@ export default function Register() {
     setValor(valorSolicitado / parcela * 1.25)
 
     setValorSolicitado('')
-    setValorSolicitadoApp('')
     setPeriodo('')
     setParcela('')
     setPoupanca('')
@@ -37,13 +36,12 @@ export default function Register() {
     setCdb(valorSolicitado / periodo * 0.0767)
     setSelic(valorSolicitado / periodo * 0.065)
 
-    setValorSolicitado('')
-    setValorSolicitadoApp('')
+    setValor('')
     setParcela('')
-    setPoupanca('')
+    setValorSolicitado('')
     setPeriodo('')
-    setCdb('')
-    setSelic('')
+
+
   
     
   }
@@ -119,8 +117,8 @@ export default function Register() {
           <input
            type="number"
            placeholder="VALOR DA APLICAÇÃO"
-           value={valorSolicitadoApp}
-            onChange={e => setValorSolicitadoApp(e.target.value)} />
+           value={valorSolicitado}
+            onChange={e => setValorSolicitado(e.target.value)} />
            
           <input
            type="number"
