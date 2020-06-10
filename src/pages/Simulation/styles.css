@@ -1,0 +1,105 @@
+.simulation-container {
+  width: 100%;
+  max-width: 1120px;
+  height: 100vh;
+  margin: 0 auto;
+
+  flex-direction: row;
+  display: flex;
+}
+
+.simulation-container .silumation-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  left: 300px;
+  bottom: 500px;
+  width: 50%;
+  height: 20%;
+  align-items: center;
+  padding: 40px
+}
+
+.simulation-container .silumation-button button {
+  margin: 50px;
+}
+
+.simulation-container .content {
+  width: 100%;
+  padding: 96px;
+  background: #fff;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 50%;
+  margin-top: 150px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.simulation-container .content section {
+  width: 100%;
+  height: 380px;
+}
+
+
+.simulation-container .content section h1 {
+  margin: 64px 0 32px;
+  font-size: 32px;
+}
+
+.simulation-container .content section p {
+  font-size: 18px;
+  color: #737380;
+  line-height: 32px;
+  margin-right: 10px;
+}
+
+.simulation-container .content form {
+  width: 100%;
+  max-width: 450px;
+}
+
+.simulation-container .content form input {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.simulation-container .content form h1  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+ 
+}
+
+.simulation-container .content form .input-group {
+  display: flex;
+  
+}
+
+.simulation-container .content form .input-group-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  
+}
+.simulation-container .content form .input-group-title p + p + p {
+  margin-left: 10px;
+}
+
+.simulation-container .content form .input-group input + input {
+  margin-left: 8px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+.sideBar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: stretch;
+  position: fixed;     
+  height: 100%;
+  width: auto;     
+  z-index: 1;     
+  top: 3.4em;      
+  background-color: #fff; 
+  margin-top: -50px;
+  border-right:  1px; 
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);     
+}
+
+
+
+.sideBar-container button {
+  width: 90%;
+	height: 60px;
+	background: #ffa039;
+	border: 0;
+	border-radius: 8px;
+	color: #fff;
+	font-weight: bold;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 60px;
+  transition: filter 0.2s;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.sideBar-container button svg {
+margin-right: 10px;
+}
+
+.sideBar-container .agenda {
+  display: flex;
+  padding: 3px;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  color: #000;
+  margin-left: 40px;
+}
+.sideBar-container .agenda svg {
+  margin-right: 8px;
+}
+
+.sideBar-container .agenda p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.sideBar-container .conta {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.sideBar-container h2 {
+  margin-bottom: 35px;
+  margin-left: 65px;
+}
+
+.sideBar-container .conta p {
+  font-size: 16px;
+  margin-right: 5px;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+.sideBar-container .conta svg {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.sideBar-container .conta .green {
+  color: #006400;
+}
+.sideBar-container .conta .red {
+  color: red;
+}
